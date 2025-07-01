@@ -96,7 +96,7 @@ pipeline {
 
                         git add k8s/app-deployment.yaml
                         git diff --cached --quiet k8s/app-deployment.yaml || git commit -m "Update image tag to ${IMAGE_NAME}:${IMAGE_TAG}"
-                        git push https://${GIT_USER}:${GIT_PASSWORD}@https://github.com/Rit36/Devops-project.git ${GIT_BRANCH}
+                        git push https://${GIT_USER}:${GIT_PASSWORD}@github.com/Rit36/Devops-project.git ${GIT_BRANCH}
                     """
                 }
             }

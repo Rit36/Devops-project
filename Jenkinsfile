@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO = 'https://github.com/Soumyajit-Rout/smart-oder-springboot-java.git'
+        GIT_REPO = 'https://github.com/Rit36/Devops-project.git'
         GIT_BRANCH = 'main'
-        IMAGE_NAME = 'soumyajitrout/smart-order'
+        IMAGE_NAME = 'Ashutosh/smart-order'
         PROJECT_DIR = "/var/lib/jenkins/workspace/smart-order"
         SONARQUBE_TOKEN = credentials('sonarqube')
     }
@@ -42,7 +42,7 @@ pipeline {
                     -Dsonar.projectKey=smart-order-springboot \
                     -Dsonar.sources=. \
                     -Dsonar.java.binaries=target/classes \
-                    -Dsonar.host.url=http://13.201.88.49:9000 \
+                    -Dsonar.host.url=http://18.207.188.199:9000 \
                     -Dsonar.token=${SONARQUBE_TOKEN}
                 """
             }

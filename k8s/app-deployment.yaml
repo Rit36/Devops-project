@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springboot-crud-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: springboot-crud-app
+  template:
+    metadata:
+      labels:
+        app: springboot-crud-app
+    spec:
+      containers:
+        - name: springboot-crud-app
+          image: soumyajitrout/smart-order:8-20250630061714
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: springboot-config
+            - secretRef:
+                name: springboot-secret
+      imagePullSecrets:
+        - name: dockerhub-secret
+

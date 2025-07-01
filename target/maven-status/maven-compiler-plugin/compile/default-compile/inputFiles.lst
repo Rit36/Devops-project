@@ -1,0 +1,6 @@
+/home/ubuntu/springboot-k8s/src/main/java/com/singam/crud/repository/OrderRepository.java
+/home/ubuntu/springboot-k8s/src/main/java/com/singam/crud/entity/Order.java
+/home/ubuntu/springboot-k8s/src/main/java/com/singam/crud/service/OrderService.java
+/home/ubuntu/springboot-k8s/src/main/java/com/singam/crud/SpringbootCrudK8sExampleApplication.java
+/home/ubuntu/springboot-k8s/src/main/java/com/singam/crud/controller/OrderController.java
+/home/ubuntu/springboot-k8s/src/main/java/com/singam/crud/controller/UIController.java

@@ -5,7 +5,7 @@ pipeline {
         GIT_REPO = 'https://github.com/Rit36/Devops-project.git'
         GIT_BRANCH = 'main'
         IMAGE_NAME = 'Ashutosh/smart-order'
-        PROJECT_DIR = "/var/lib/jenkins/workspace/smart-order"
+        PROJECT_DIR = "/var/lib/jenkins/workspace/ulitimate-cicd"
         SONARQUBE_TOKEN = credentials('sonarqube')
     }
 
